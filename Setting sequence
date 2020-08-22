@@ -1,0 +1,16 @@
+1. PC1을 DHCP 설정하기 
+2. DHCP 서버 장비 쪽 default gateway 수정 (10.30.0.1 -> 10.30.0.11 로 수정)
+3. MLS1 , MLS2 conf t ip routing 설정
+4. MLS1, MLS2, R1 OSPF AREA 0 로 설정
+
+5. Server-pt web server의 gateway r1으로 설정 
+
+6. MLS1 , MLS2 를 HSRP 설정 MLS1 이 메인 라우터
+
+7. DHCP SEVER 에서 DHCP VLAN 10 10.10.0.1 VLAN 20 10.10.0.2 로 고치기
+
+8. 각 PC들 DHCP 초기화하기 
+
+9. spanning-tree 우선순위 MLS1 으로 설정.
+ 
+

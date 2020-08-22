@@ -1,0 +1,14 @@
+MLS2(config)#ip routing
+MLS2(config)#router ospf 1
+MLS2(config-router)#network 0.0.0.0 255.255.255.255 area 0
+-----------------------ospf 설정-------------------------
+
+MLS2(config)#int vlan 10 
+MLS2(config-if)#standby 10 preempt
+MLS2(config-if)#standby 10 ip 10.10.0.1
+MLS2(config)#int vlan 20
+MLS2(config-if)#standby 20 priority 101
+MLS2(config-if)#standby 20 preempt
+MLS2(config-if)#standby 20 ip 10.20.0.1 
+-------------------------HSRP ----------------------------
+MLS2(config)#spanning-tree vlan 20 root primary
